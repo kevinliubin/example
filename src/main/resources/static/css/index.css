@@ -1,0 +1,261 @@
+/* base */
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+button,
+dl,
+dt,
+dd,
+form,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 768px;
+    margin: 0 auto;
+    background-color: #fff;
+    font-size: 14px;
+    color: #666666;
+    overflow: auto;
+}
+header, footer,main,section,article{
+    display: block;
+}
+
+img {
+    border: 0 none;
+    display: block;
+}
+
+input,
+button {
+    border: 0 none;
+    outline-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:hover {
+    color: #1393A4;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+/* ------ */
+.rb_box{
+    width:100%;
+    height:100%;
+    background-color: #090b0a;
+    position: relative;
+    box-sizing: border-box;
+    padding-bottom:85px;
+    min-height: 100vh;
+}
+.rb_top_box{
+    width:100%;
+}
+.rb_top_box img{
+    width:100%;
+}
+.rb_bottom{
+    position: absolute;
+    bottom:30px;
+    margin:0 auto;
+    left:0;right:0;
+}
+.rb_bottom img{
+    margin:0 auto;
+}
+.rb_submit_box{
+    min-height: 250px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 30px;
+    overflow: hidden;
+    position: relative;
+}
+.border_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    right: 0;
+    margin:0 auto;
+}
+.rb_submit_input{
+    border:1px solid #6fb6d9;
+    margin-bottom: 15px;
+    position: relative;
+    width: 100%;
+}
+.rb_submit_input_inset{
+    width:100%;
+    box-sizing: border-box;
+    border:1px solid #375257;
+    height:38px;
+}
+.rb_input_item{
+    border:none;
+    outline:none;   
+    background-color: #090b0a;
+    float: left;
+    width: 50%;
+    height:100%;
+    line-height:38px;
+    color:#FFFFFF;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.rb_submit_input .rb_input_lable{
+    float: left;
+    width:50%;
+    padding-left:8px;
+    height:100%;
+    display: block;
+    line-height:36px;
+    box-sizing: border-box;
+}
+input.rb_input_item:focus { 
+    outline: none; 
+}
+.rb_input_lable{
+    float: left;
+}
+.rb_input_lable{
+    color:#FFFFFF;
+    font-size: 14px;
+}
+.rb_submit_btn img{
+    width:100%;
+}
+.code_input .rb_input_item{
+    width:60%;
+    float: left;
+    box-sizing: border-box;
+    padding-left:8px;
+}
+.code_input .code_img,.code_input .code_time{
+    width:40%;
+    float: left;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40px;
+    color:#333333;
+    right: -1px;
+    font-size: 14px;
+    line-height: 40px;
+    /* background: #FFFFFF; */
+    text-align: center;
+    position: absolute;
+    top: -1px;
+    background: linear-gradient(#FFFFFF, #a19f9d);
+    background: -webkit-linear-gradient(#FFFFFF, #a19f9d);
+    background: -o-linear-gradient(#FFFFFF, #a19f9d);
+    background: -moz-linear-gradient(#FFFFFF, #a19f9d);
+    background: linear-gradient(#FFFFFF, #a19f9d);
+}
+.code_input .code_time{
+    display: none;
+    color:#6e6d6d;
+}
+.rb_submit_btn{
+    margin-top:15px;
+}
+.rb_submit_big_box{
+    overflow: hidden;
+    margin: -88px 55px 20px;
+    position: relative;
+}
+.box_success{
+    height: 288px;
+    position: relative;
+}
+
+.rb_submit_success{
+  display: none;
+}
+.rb_submit_success img{
+    width:100%;
+    box-sizing: border-box;
+    margin:0 auto;
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:70%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+.error_box{
+    position: absolute;
+    color: #e60b0b;
+    padding-top: 2px;
+    left: 8px;
+    font-size: 12px;
+}
+#msgMask{
+    display: none;
+    width: 320px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    line-height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    background: rgba(0,0,0,0.9);
+    color:#FFFFFF;
+}

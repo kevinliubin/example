@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>睿博财富</title>
+    <link rel="stylesheet" th:href="@{/css/index.css}">
+    <script th:src="@{js/jquery.js}"></script>
+    <script th:src="@{js/index.js}"></script>
+</head>
+<body>
+    <div class="rb_box">
+        <div class="rb_top_box">
+            <img src="images/bg.png" alt="">
+        </div>
+        <div class="rb_submit_big_box">
+            <img src="images/border.png" alt="" class="border_img">
+            <div class="rb_submit_box">
+                <div class="rb_box_input">
+                    <div class="rb_submit_input">
+                        <div class="rb_submit_input_inset">
+                            <div class="rb_input_lable">输入手机号：</div>
+                            <input type="text" class="rb_input_item" id="phone">
+                        </div>
+                    </div>
+                    <div class="rb_submit_input code_input">
+                        <div class="rb_submit_input_inset">
+                            <input type="text" class="rb_input_item" id="code">
+                            <div class="code_img">验证码</div>
+                            <div class="code_time"></div>
+                        </div>
+                    </div>
+                    <div class="rb_submit_input">
+                        <div class="rb_submit_input_inset">
+                            <div class="rb_input_lable">员工编号：</div>
+                            <input type="text" class="rb_input_item" id="orderId"> 
+                        </div>
+                    </div>
+                    <div class="rb_submit_btn">
+                        <img src="images/submit.png" alt="">
+                    </div>
+                </div>
+                <div class="rb_submit_success">
+                    <img src="images/submit_success.png" alt="">
+                </div>
+            </div>
+        </div>
+        <footer class="rb_bottom">
+            <img src="images/service.png" alt="">
+        </footer>
+    </div>
+    <div id="msgMask"></div>
+</body>
+</html>
